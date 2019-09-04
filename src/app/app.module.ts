@@ -9,6 +9,9 @@ import { MinimaLight } from '@alyle/ui/themes/minima';
 import { LyButtonModule } from '@alyle/ui/button';
 import { LyCarouselModule } from '@alyle/ui/carousel';
 
+import { HAMMER_GESTURE_CONFIG } from '@angular/platform-browser';
+import { LyHammerGestureConfig } from '@alyle/ui';
+
 import { CarouselWithGesturesComponent } from './carousel-with-gestures/carousel-with-gestures.component';
 
 @NgModule({
@@ -25,7 +28,10 @@ import { CarouselWithGesturesComponent } from './carousel-with-gestures/carousel
     LyCarouselModule
 
   ],
-  providers: [{ provide: LY_THEME, useClass: MinimaLight, multi: true }],
+  providers: [
+    { provide: LY_THEME, useClass: MinimaLight, multi: true },
+    { provide: HAMMER_GESTURE_CONFIG, useClass: LyHammerGestureConfig }
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
