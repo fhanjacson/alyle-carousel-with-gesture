@@ -1,6 +1,7 @@
 # CarouselWithGesture
 
-Example For using Alyle Framework on Angular 8. This repositoty contains Angular project for Carousel with Gesture example.
+Example For using Alyle Framework on Angular 8.
+This repositoty contains Angular project for Carousel with Gesture example.
 
 1. Clone this repo                          [git clone "https://github.com/fhanjacson/alyle-carousel-with-gesture.git"]
 2. Change directory to the project folder   [cd ayle-carousel-with-gesture]
